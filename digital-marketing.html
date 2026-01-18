@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Digital Marketing – MaithliX | SEO, Social Media, PPC & Strategy</title>
+    <meta name="description"
+        content="Boost your brand with MaithliX's comprehensive digital marketing services. From SEO and content marketing to paid ads and social media management, we drive measurable results.">
+    <meta name="keywords"
+        content="Digital Marketing, SEO, Social Media Marketing, PPC, Content Marketing, Brand Strategy, Online Growth">
+    <meta name="author" content="MaithliX">
+    <link rel="canonical" href="https://maithlix.com/digital-marketing.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        .page-header {
+            padding: 160px 0 80px;
+            background: var(--primary-blue);
+            color: var(--text-white);
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+        }
+
+        .page-intro {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: var(--text-glass);
+        }
+
+        .service-detail-section {
+            padding: var(--spacing-xl) 0;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .detail-content h2 {
+            margin-bottom: 1.5rem;
+            color: var(--accent-blue);
+        }
+
+        .detail-content ul {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .detail-content li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .detail-content li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo" aria-label="MaithliX Home">
+                    <video src="assets/logo-animation.mp4" autoplay loop muted playsinline></video>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="index.html#process" class="nav-link">Process</a></li>
+                    <li><a href="index.html#contact" class="nav-link cta-nav">Get Started</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Digital Marketing</h1>
+            <p class="page-intro">Elevate your brand and drive real business growth with our data-driven digital
+                marketing strategies.</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <main class="service-detail-section">
+        <div class="container">
+            <!-- SEO -->
+            <div class="detail-grid">
+                <div class="detail-content">
+                    <h2>SEO & Content Marketing</h2>
+                    <p>Visibility is the key to online success. Our SEO strategies are designed not just to rank you
+                        higher, but to attract the right audience. We combine technical optimizations with high-quality
+                        content that engages and converts.</p>
+                    <ul>
+                        <li>Comprehensive Keyword Research & Strategy</li>
+                        <li>On-Page & Off-Page Optimization</li>
+                        <li>Technical SEO Audits</li>
+                        <li>Engaging Blog & Article Writing</li>
+                    </ul>
+                </div>
+                <div class="detail-image">
+                    <img src="assets/digital-marketing-icon.png" alt="SEO Illustration"
+                        style="width: 100%; max-width: 400px; display: block; margin: 0 auto; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));">
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="detail-grid" style="direction: rtl;">
+                <div class="detail-content" style="direction: ltr;">
+                    <h2>Social Media Management</h2>
+                    <p>Build a loyal community around your brand. We create compelling social media campaigns that
+                        resonate with your audience, foster engagement, and build lasting relationships across all major
+                        platforms.</p>
+                    <ul>
+                        <li>Platform-Specific Strategy (Instagram, LinkedIn, Twitter, etc.)</li>
+                        <li>Content Creation & Curation</li>
+                        <li>Community Management & Engagement</li>
+                        <li>Influencer Collaboration</li>
+                    </ul>
+                </div>
+                <div class="detail-image" style="direction: ltr;">
+                    <!-- Placeholder for social media graphic, reusing icon for now or can be generic -->
+                    <div
+                        style="width: 100%; max-width: 400px; height: 300px; background: #f0f4ff; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                        <span style="font-size: 4rem;">📱</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PPC -->
+            <div class="detail-grid">
+                <div class="detail-content">
+                    <h2>Paid Advertising (PPC)</h2>
+                    <p>Get immediate results with targeted ad campaigns. We manage your ad spend efficiently to maximize
+                        ROI, targeting the exact demographics that matter most to your business.</p>
+                    <ul>
+                        <li>Google Ads (Search, Display, Shopping)</li>
+                        <li>Social Media Ads (Facebook, Instagram, LinkedIn)</li>
+                        <li>Retargeting Campaigns</li>
+                        <li>A/B Testing & Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="detail-image">
+                    <div
+                        style="width: 100%; max-width: 400px; height: 300px; background: #fff0eb; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                        <span style="font-size: 4rem;">🎯</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div
+                style="text-align: center; margin-top: 4rem; padding: 4rem; background: var(--bg-light); border-radius: 20px;">
+                <h2 style="margin-bottom: 1rem;">Ready to Grow Your Brand?</h2>
+                <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let's discuss
+                    how our digital marketing solutions can help you achieve your business goals.</p>
+                <a href="index.html?service=digital-marketing#contact" class="btn btn-primary btn-large">Start Your
+                    Campaign</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="logo" aria-label="MaithliX Home" style="margin-bottom: 20px;">
+                        <video src="assets/logo-animation.mp4" autoplay loop muted playsinline></video>
+                    </a>
+                    <p>Powering growth through integrated technology, marketing, and talent solutions. Your trusted
+                        partner for digital
+                        excellence.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a>
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                        <a href="https://www.instagram.com/maithlix/?igsh=cHRtcDlzbzdjMjFj" aria-label="Instagram"><svg
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <!-- Links (Simplified for subpages) -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="it-development.html">IT Development</a></li>
+                        <li><a href="recruitment.html">Recruitment</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> MaithliX – All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919576620711?text=Hello%20MaithliX%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services"
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+        <span class="whatsapp-pulse"></span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

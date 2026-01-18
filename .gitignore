@@ -1,0 +1,19 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Idea/Editor backups
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+
+# Log files
+*.log
+
+# Git files (though they are already ignored by git itself usually)
+.git/
