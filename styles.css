@@ -296,7 +296,8 @@ header .container {
 .nav-toggle span {
     width: 25px;
     height: 3px;
-    background: var(--text-white);
+    background: var(--primary-blue);
+    /* Default to blue for visibility on white */
     border-radius: 2px;
     transition: var(--transition-base);
 }
@@ -1280,20 +1281,38 @@ header .container {
 
     .nav-menu .nav-link {
         font-size: 1.2rem;
-        padding: 15px 0;
+        padding: 20px 0;
         width: 100%;
         text-align: center;
+        color: #ffffff !important;
+        /* Force white for visibility */
+        opacity: 1;
+    }
+
+    .nav-menu .nav-link.cta-nav {
+        background: var(--primary-blue);
+        color: #ffffff !important;
+        max-width: 250px;
+        margin: 20px auto 0;
+        border-radius: 30px;
     }
 
     .navbar {
-        padding: 12px 0;
-        /* Smaller padding on mobile */
+        padding: 10px 0;
+        background: rgba(255, 255, 255, 0.98);
+        /* Solid white bg for clear logo */
+        backdrop-filter: blur(10px);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .navbar .nav-link {
+        color: var(--text-primary);
+        /* Dark text for links on mobile if visible */
     }
 
     .logo {
-        width: 120px;
-        /* Smaller logo on mobile */
-        height: 50px;
+        width: 130px;
+        height: 55px;
     }
 
     .hero {
